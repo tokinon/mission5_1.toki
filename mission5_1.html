@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>mission5-1</title>
+    
+    <style>
+
+        
+    
+    </style>
+</head>
+<body>
+    <div><h2 style="text-align:center"></h2></div>
+    <form name="dnForm"> 
+        
+        <tr>
+         <td align="center"><colspan="4" >
+        <span style="color: #b0e0e6">電卓</span></td> <!--名前-->
+        </tr>
+    <table border="1"><!--電卓の枠線の太さ-->
+        <tr>
+        <colspan="3" ><input type="text" size="12" name="Line" value="0"></td><!--テキストボックスの大きさと初期値-->
+        </tr>
+        <!--電卓のボタン7,8,9,÷-->
+        <tr>
+        <td align="center"><input type="button" value=" 7 " onclick="Value(7)"></td>
+        <td align="center"><input type="button" value=" 8 " onclick="Value(8)"></td>
+        <td align="center"><input type="button" value=" 9 " onclick="Value(9)"></td>
+        <td align="center"><input type="button" value="÷" onclick="Calculate('/')"></td>
+        </tr>
+        <!--電卓のボタン4,5,6,×-->
+        <tr>
+        <td align="center"><input type="button" value=" 4 " onclick="Value(4)"></td>
+        <td align="center"><input type="button" value=" 5 " onclick="Value(5)"></td>
+        <td align="center"><input type="button" value=" 6 " onclick="Value(6)"></td>
+        <td align="center"><input type="button" value="×" onclick="Calculate('*')"></td>
+        </tr>
+        <!--電卓のボタン1,2,3,- -->
+        <tr>
+        <td align="center"><input type="button" value=" 1 " onclick="Value(1)"></td>
+        <td align="center"><input type="button" value=" 2 " onclick="Value(2)"></td>
+        <td align="center"><input type="button" value=" 3 " onclick="Value(3)"></td>
+        <td align="center"><input type="button" value="-" onclick="Calculate('-')"></td>
+        </tr>
+        <!--電卓のボタン0,.,+,=-->
+        <tr>
+        <td align="center"><input type="button" value=" 0 " onclick="Value(0)"></td>
+        <td align="center"><input type="button" value=" ・ " onclick="Value('.')"></td>
+        <td align="center"><input type="button" value=" + " onclick="Calculate('+')"></td>
+        <td align="center"><input type="button" value="=" onclick="Calculate('=')"></td>
+        </tr>
+        <!--電卓のボタンC-->
+        <tr>
+        <td align="center"><input type="button" value="C" onclick="C()"></td>
+        </tr>
+
+        
+        
+        
+    </table>
+   
+        <script src="mission5-1.js"></script>
+    </form>
+</body>
+    
+    
+</html>
